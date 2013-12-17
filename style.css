@@ -36,8 +36,7 @@ i.fa {
 }
 #nav_container
 {
-	border: 1px solid black;
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 5px 5px 5px rgba(100,100,100,1);
 	padding-top:10px;
 }
 #nav_list
