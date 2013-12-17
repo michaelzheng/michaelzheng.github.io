@@ -1,10 +1,26 @@
+body {
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+    display: block;
+  }
+
+  body > *  {
+    margin: auto;
+    width: 500px;
+    border: 1px solid blue;
+    display: block;
+    overflow: auto;
+  }
+
+  body > script {
+    display: none
+  }
+
 #nav_container div
 {
 border: 1px solid black;
 box-shadow: 10px 10px 5px #888888;
-margin-left: auto;
-margin-right: auto;
-width: 700px;
 }
 
 #nav_list li
