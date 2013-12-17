@@ -6,6 +6,7 @@ $(document).ready(function() {
     $("a.clickable").bind('click', function() {
     	navigateLink($(this).children("span").html());
     });
+    
 });
 
 function navigateLink(link) {
@@ -17,3 +18,4 @@ function navigateLink(link) {
 		case "Youtube": window.location.href = "http://www.youtube.com"; break;
 	}
 }
+

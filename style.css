@@ -4,23 +4,8 @@ body
     width: 100%;
     display: block;
     font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
-    background-color:rgba(100,100,100,1);
-	min-height:100%;
-}
-#wrap{
-	overflow: hidden;
-	height: 100%;
 }
 
-div.container {
-	height:100%;
-	background-color:rgba(255,255,255,1);
-}
-
-#footer {
-	border-top:1px solid rgba(100,100,100,1);
-	background-color:rgba(255,255,255,1);
-}
 body > *
 {
 	text-align:center;
@@ -42,17 +27,18 @@ i.fa {
 {
 	font-family: "Lucida Console", Monaco, monospace;
 }
+
+#content
+{
+text-align: justify;
+}
 #header_greeting
 {
 	text-align:center;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-#nav_container
-{
-	padding-top:10px;
-	padding-bottom:0px;
-}
+
 #nav_list
 {
 	padding:0px;
