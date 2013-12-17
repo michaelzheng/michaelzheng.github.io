@@ -37,7 +37,8 @@ i.fa {
 #nav_container
 {
 	box-shadow: 5px 5px 5px rgba(100,100,100,1);
-	padding-top:15px;
+	padding-top:10px;
+	padding-bottom:0px;
 }
 #nav_list
 {
