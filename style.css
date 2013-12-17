@@ -6,9 +6,9 @@ body {
   }
 
   body > *  {
+	text-align:center;
     margin: auto;
     width: 500px;
-    border: 1px solid blue;
     display: block;
     overflow: auto;
   }
