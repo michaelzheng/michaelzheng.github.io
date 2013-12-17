@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var greetingsArray = [ "Hello", "Hi There", "Howdy" ];
+	var greetingsArray = ["Welkom","স্বাগতম","欢迎","歡迎","Welcome","Velkommen","Bienvenue","Willkommen","પધારો","Aloha","ברוך הבא","स्वागत","Üdvözlet","Benvenuti","ようこそ","환영합니다","Laipni lūdzam","Sveiki atvykę","സ്വാഗതം","Velkommen","Witajcie","Bem-vindos","Добро пожаловать","Добродошли","Vitajte","Bienvenidos","Välkomna","வாங்க","సుస్వాగతం","ยินดีต้อนรับ","Hoş geldiniz","Ẹ ku abọ"];
 	var item = greetingsArray[Math.floor(Math.random()*greetingsArray.length)];
     $("#header_greeting").html(item);
     
