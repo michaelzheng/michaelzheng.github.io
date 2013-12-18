@@ -51,6 +51,22 @@ text-align: justify;
 	padding-right:10px;
 	margin:0px;
 }
+a.title
+{
+	text-decoration: none;
+}
+a.title:link 
+{
+	color:black;
+}
+a.title:hover
+{
+	color:black;
+}
+a.title:visited
+{
+	color:black;
+}
 
 a.clickable
 {
