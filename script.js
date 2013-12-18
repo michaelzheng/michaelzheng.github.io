@@ -4,7 +4,6 @@ $(document).ready(function() {
     $("a.clickable").bind('click', function() {
     	navigateLink($(this).children("span").html());
     });
-    
 });
 
 function navigateLink(link) {

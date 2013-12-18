@@ -38,7 +38,11 @@ text-align: justify;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-
+#date
+{
+	color:rgba(100,100,100,1);
+	font-size:14px;
+}
 #nav_list
 {
 	padding:0px;
