@@ -28,8 +28,18 @@
     <script type="text/javascript" src="/script.js"></script>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href="/style.css" rel="stylesheet">
-	<meta http-equiv="refresh" content="5;url=/index.html" />
-
+	<script language="javascript">
+		$( document ).ready(function() {
+			var sec = $('#countdown').text() || 5;
+			var timer = setInterval(function() { 
+				$('#countdown').text(--sec);
+				if (sec == 0) {
+					window.location.href="/";
+					clearInterval(timer);
+				} 
+			}, 1000);
+		});
+	</script>
   </head>
 
   <body>
@@ -43,7 +53,7 @@
         	<h1 id="header_greeting">404</h1>
         </div>
 			<div id="content">	
-				Nothing to see here, redirecting you <a href="/index.html">home</a>...	
+				Nothing to see here, redirecting you <a href="/index.html">home</a> in <span id="countdown">5</span>...	
 			</div>
 		</div>
     </div>
