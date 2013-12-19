@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 function navigateLink(link) {
 	switch (link) {
+		case "Home": window.location.href = "/"; break;
 		case "Github": window.location.href = "http://www.github.com/michaelzheng"; break;
 		case "Twitter": window.location.href = "http://www.twitter.com/EXC_BAD_ACCESS"; break;
 		case "Linkedin": window.location.href = "http://www.linkedin.com/profile/view?id=156606696"; break;
