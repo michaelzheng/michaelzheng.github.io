@@ -114,13 +114,19 @@ function vigenere(plaintext,key) {
 }
 
 function vigenere_encryptText(plain,key) {
+	console.log("Trimming Whitespace...");
+	plain = plain.replace(/\s+/g, '');
 	var buffer = "";
+	var paddedKey = "";
+	for (int i = 0; i < Math.ceil(plain.length / key.length); i++) {
+		paddedKey += key;
+	}
+	paddedKey = paddedKey.subString(0,plain.length);
+	
 	for (var i = 0; i < plain.length; i++) {
-		if (plain.charAt(i) != ' ') {
-			var c = plain.charAt(i);
-			var k = key.charAt(intValueForCharacter(c) % key.length);  
-			buffer += vigenere_encryptCharacter(c,k);
-        }
+		var c = plain.charAt(i);
+		var k = key.charAt(i);  
+		buffer += vigenere_encryptCharacter(c,k);
     }
     return buffer;
 }
