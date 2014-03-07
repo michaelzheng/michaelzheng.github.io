@@ -20,7 +20,7 @@ body > script
 }
 
 i.header {
-	display:block;
+	display:inline-block;
 	overflow:auto:
 }
 .codeblock
