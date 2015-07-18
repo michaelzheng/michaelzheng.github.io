@@ -53,4 +53,5 @@ $(function() {
         document.title = title;
         $('#content').load('/' + $(this).attr('id'));
     });
+    $('.fa-home').parent().addClass('clicked');
 });
