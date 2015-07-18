@@ -37,7 +37,8 @@ $(function() {
             'icon' : 'fa-user-secret',
             'url' : 'ciphers.html'
         }
-    ]; 
+    ];
+    var cache = {};
     var html = '';
     for (var i = 0; i < pages.length; i++) {
         html += '<li><a class="clickable" href="#" id="' + pages[i]['url'] + '">';
@@ -47,11 +48,27 @@ $(function() {
     $('#nav-list').html(html);
 
     $("a.clickable").bind('click', function() {
+        if ($(this).hasClass('clicked')) {
+            return;
+        }
         $('.clicked').removeClass('clicked');
         $(this).addClass('clicked');
         var title = $(this).children('span').html();
         document.title = title;
-        $('#content').load('/' + $(this).attr('id'));
+        var cached = cache[title];
+        if (cached != null) {
+            $('#content').html(cached);
+        }
+        else {
+            $.get('/' + $(this).attr('id'), function(data) {
+                cache[title] = data;
+                $('#content').html(data); 
+            });
+        }
+    });
+    $.get('/home.html', function(data) {
+        cache['Home'] = data;
+        $('#content').html(data);
     });
     $('.fa-home').parent().addClass('clicked');
 });
