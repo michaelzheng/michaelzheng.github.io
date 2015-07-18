@@ -34,6 +34,7 @@ i.header {
 .header
 {
 	text-align:center;
+    margin-bottom:15px;
 }
 #date
 {
@@ -91,4 +92,16 @@ a.clickable span.description
 a.clickable:hover span.description
 {
 	color:rgba(100,100,100,1);
+}
+a.clicked
+{
+    color:rgba(100,100,100,1) !important;
+}
+a.clicked span.description
+{
+	color:rgba(100,100,100,1) !important;
+}
+.tab-content
+{
+    padding-top:10px;
 }

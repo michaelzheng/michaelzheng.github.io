@@ -47,10 +47,10 @@ $(function() {
     $('#nav-list').html(html);
 
     $("a.clickable").bind('click', function() {
-        clearInterval(welcomeMessageLoop);
+        $('.clicked').removeClass('clicked');
+        $(this).addClass('clicked');
         var title = $(this).children('span').html();
         document.title = title;
-        $('#header-greeting').html(title);
         $('#content').load('/' + $(this).attr('id'));
     });
 });
