@@ -1,0 +1,67 @@
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/ciphers.js" type="text/javascript"></script>
+<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a href="#vigenere" data-toggle="tab">vigenere</a></li>
+    <li><a href="#caesar" data-toggle="tab">caesar</a></li>
+    <!--<li><a href="#hill" data-toggle="tab">hill</a></li> -->
+    <!--<li><a href="#turninggrille" data-toggle="tab">turning grille</a></li> -->
+    <li><a href="#xtime" data-toggle="tab">xtime</a></li>
+</ul>
+<div id="my-tab-content" class="tab-content">
+    <div class="tab-pane active" id="vigenere">
+        <h1>vigenere</h1>
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+                <input id="vigenerePlaintext" type="text" class="form-control" placeholder="Plaintext">
+            </div>
+            <div class="input-group">
+                <input id="vigenereKey" type="text" class="form-control" placeholder="Key">
+            </div>
+            <div class="input-group">
+                <input id="vigenereCiphertext" type="text" class="form-control" placeholder="Ciphertext" readonly>
+            </div>
+            </br>
+            <a id="vignereButton" class="btn btn-success">Generate</a>
+        </div>
+    </div>
+    <div class="tab-pane" id="caesar">
+        <h1>caesar</h1>
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+                <input id="caesarPlaintext" type="text" class="form-control" placeholder="Plaintext">
+            </div>
+            <div class="input-group">
+                <input id="caesarOffset" type="text" class="form-control" placeholder="Offset">
+            </div>
+            <div class="input-group">
+                <input id="caesarCiphertext" type="text" class="form-control" placeholder="Ciphertext" readonly>
+            </div>
+            </br>
+            <a id="caesarButton" class="btn btn-success">Generate</a>
+        </div>
+    </div>
+    <div class="tab-pane" id="hill">
+        <h1>hill</h1>
+        <p>a,b,c,d matrix.</p>
+    </div>
+    <div class="tab-pane" id="turninggrille">
+        <h1>turning grille</h1>
+        <p>the grille turns</p>
+    </div>
+    <div class="tab-pane" id="xtime">
+        <h1>xtime</h1>
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+                <input id="xtimeFirst" type="text" class="form-control" placeholder="0x">
+            </div>
+            <div class="input-group">
+                <input id="xtimeSecond" type="text" class="form-control" placeholder="0x">
+            </div>
+            <div class="input-group">
+                <input id="xtimeResult" type="text" class="form-control" placeholder="Result" readonly>
+            </div>
+            </br>
+            <a id="xtimeButton" class="btn btn-success">Generate</a>
+        </div>
+    </div>
+</div>
